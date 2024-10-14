@@ -1,0 +1,51 @@
+@font-face {
+	font-family: 'Cygre Bold';
+	src: url('cygre-bold.eot');
+	/* IE 9 Compatibility Mode */
+	src:
+		url('cygre-bold.woff2') format('woff2'),
+		/* Super Modern Browsers */
+		url('cygre-bold.woff') format('woff'),
+		/* Firefox >= 3.6, any other modern browser */
+		url('cygre-bold.ttf') format('truetype');
+	/* Safari, Android, iOS */
+}
+
+@font-face {
+	font-family: 'Cygre Medium';
+	src: url('cygre-medium.eot');
+	/* IE 9 Compatibility Mode */
+	src:
+		url('cygre-medium.woff2') format('woff2'),
+		/* Super Modern Browsers */
+		url('cygre-medium.woff') format('woff'),
+		/* Firefox >= 3.6, any other modern browser */
+		url('cygre-medium.ttf') format('truetype');
+	/* Safari, Android, iOS */
+}
+
+@font-face {
+	font-family: 'Cygre SemiBold';
+	src: url('cygre-semibold.eot');
+	/* IE 9 Compatibility Mode */
+	src:
+		url('cygre-semibold.woff2') format('woff2'),
+		/* Super Modern Browsers */
+		url('cygre-semibold.woff') format('woff'),
+		/* Firefox >= 3.6, any other modern browser */
+		url('cygre-semibold.ttf') format('truetype');
+	/* Safari, Android, iOS */
+}
+
+@font-face {
+	font-family: 'Cygre';
+	src: url('.cygre-regular.eot');
+	/* IE 9 Compatibility Mode */
+	src:
+		url('cygre-regular.woff2') format('woff2'),
+		/* Super Modern Browsers */
+		url('cygre-regular.woff') format('woff'),
+		/* Firefox >= 3.6, any other modern browser */
+		url('cygre-regular.ttf') format('truetype');
+	/* Safari, Android, iOS */
+}

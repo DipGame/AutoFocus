@@ -1,0 +1,233 @@
+.main_keys_form {
+    margin-top: 60px;
+    margin-bottom: 80px;
+    border-radius: 40px;
+    background-color: #2164E5;
+    padding: 80px;
+    display: flex;
+    gap: 40px;
+    justify-content: space-between;
+
+    .cont {
+        width: 100%;
+        max-width: 50%;
+    }
+
+    .left_cont {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+
+        h3 {
+            font-family: Cygre SemiBold;
+            font-size: 48px;
+            font-weight: 600;
+            line-height: 48px;
+            text-align: left;
+            color: #FFF;
+        }
+
+        p {
+            font-family: Cygre Medium;
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 23.4px;
+            text-align: left;
+            color: #FFF;
+        }
+    }
+
+    .right_cont {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        .top {
+            display: flex;
+            gap: 20px;
+
+            .input_cont {
+                width: 100%;
+                position: relative;
+
+                input {
+                    width: 100%;
+                    max-width: 568px;
+                    border-radius: 12px;
+                    border: 1px solid #FFFFFF;
+                    height: 80px;
+                    padding: 0 20px;
+                    font-family: Cygre;
+                    font-size: 24px;
+                    font-weight: 400;
+                    line-height: 33.6px;
+                    text-align: left;
+                    background-color: #FFF;
+                }
+
+                input::placeholder {
+                    opacity: .5;
+                }
+
+                span {
+                    font-family: Cygre;
+                    font-size: 18px;
+                    font-weight: 400;
+                    line-height: 25.2px;
+                    text-align: left;
+                    position: absolute;
+                    top: 101%;
+                    width: 100%;
+                    left: 0;
+                    display: none;
+                    color: #FFF;
+                }
+            }
+
+            .input_cont.err {
+
+                input,
+                input::placeholder {
+                    color: #E22B57;
+                    opacity: 1;
+                }
+
+                input {
+                    border: 1px solid #E22B57;
+                }
+
+                span {
+                    // display: block;
+                }
+            }
+
+            button[type=submit] {
+                font-family: Cygre SemiBold;
+                font-size: 24px;
+                font-weight: 600;
+                line-height: 33.6px;
+                text-align: center;
+                height: 80px;
+                width: 100%;
+                max-width: 192px;
+            }
+        }
+
+        p {
+            font-family: Cygre;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 22.4px;
+            text-align: left;
+            color: #FFF;
+        }
+
+        p a {
+            font-family: Cygre SemiBold;
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 22.4px;
+            text-align: left;
+            color: #FFF;
+        }
+
+        p a:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+@media (max-width: 1550px) {
+    .main_keys_form .right_cont .top {
+        flex-direction: column;
+
+        .input_cont {
+            input {
+                max-width: none;
+            }
+
+
+        }
+
+        button[type=submit] {
+            max-width: none;
+        }
+    }
+}
+
+@media (max-width: 1290px) {
+    .main_keys_form {
+        flex-direction: column;
+        border-radius: 20px;
+
+        .cont {
+            max-width: none;
+        }
+    }
+}
+
+@media (max-width: 720px) {
+    .main_keys_form {
+        padding: 40px 20px;
+    }
+
+    .main_keys_form .left_cont h3 {
+        font-family: Cygre SemiBold;
+        font-size: 30px;
+        font-weight: 600;
+        line-height: 36px;
+        text-align: left;
+    }
+
+    .main_keys_form .left_cont {
+        gap: 20px;
+    }
+
+    .main_keys_form .left_cont p {
+        font-family: Cygre Medium;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 18.2px;
+        text-align: left;
+    }
+
+    .main_keys_form .right_cont p {
+        font-family: Cygre;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 16.8px;
+        text-align: left;
+
+        a {
+            font-family: Cygre SemiBold;
+            font-size: 12px;
+            font-weight: 600;
+            line-height: 16.8px;
+            text-align: left;
+        }
+    }
+
+    .main_keys_form .right_cont .top .input_cont input {
+        height: 60px;
+        font-family: Cygre;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 25.2px;
+        text-align: left;
+    }
+
+    .main_keys_form .right_cont .top button[type=submit] {
+        height: 60px;
+        font-family: Cygre SemiBold;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 25.2px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 470px) {
+    .main_keys_form {
+        margin-bottom: 40px;
+    }
+}

@@ -1,0 +1,464 @@
+.footer {
+    background-color: #000;
+}
+
+.footer_top_container {
+    display: flex;
+    gap: 40px;
+    padding: 80px 0;
+
+    .left_container {
+        background-color: #FFF;
+        border-radius: 40px;
+        padding: 60px 40px;
+        width: 100%;
+        max-width: 50%;
+        background-image: url('./../img/arrow_back.png');
+        background-size: 635px 270px;
+        background-position: 100% 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 30px;
+
+        span {
+            font-family: Cygre SemiBold;
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 24px;
+            text-align: left;
+        }
+
+        p {
+            font-family: Cygre Medium;
+            font-size: 60px;
+            font-weight: 500;
+            line-height: 72px;
+            text-align: left;
+        }
+    }
+
+    .right_container {
+        padding: 60px 40px;
+        background-color: #2164E5;
+        border-radius: 40px;
+        width: 100%;
+        max-width: 50%;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+
+        span {
+            font-family: Cygre SemiBold;
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 33.6px;
+            text-align: left;
+            color: #FFF;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+
+            .input_cont {
+                width: 100%;
+                position: relative;
+
+                input {
+                    width: 100%;
+                    border-radius: 12px;
+                    border: 1px solid #FFFFFF;
+                    height: 80px;
+                    padding: 0 20px;
+                    font-family: Cygre;
+                    font-size: 24px;
+                    font-weight: 400;
+                    line-height: 33.6px;
+                    text-align: left;
+                    color: #FFF;
+                }
+
+                input::placeholder {
+                    opacity: .5;
+                    color: #FFF;
+                }
+
+                span {
+                    font-family: Cygre;
+                    font-size: 18px;
+                    font-weight: 400;
+                    line-height: 25.2px;
+                    text-align: left;
+                    position: absolute;
+                    top: 101%;
+                    width: 100%;
+                    left: 0;
+                    display: none;
+                }
+            }
+
+            .input_cont.err {
+
+                input,
+                input::placeholder {
+                    color: #E22B57;
+                    opacity: 1;
+                }
+
+                input {
+                    border: 1px solid #E22B57;
+                }
+
+                span {
+                    display: block;
+                }
+            }
+
+            button[type=submit] {
+                font-family: Cygre SemiBold;
+                font-size: 24px;
+                font-weight: 600;
+                line-height: 33.6px;
+                text-align: center;
+                height: 80px;
+            }
+
+            p,
+            p a {
+                font-family: Cygre;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 22.4px;
+                text-align: left;
+                color: #FFF;
+            }
+
+            p a:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+.footer_bottom_container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    .top_container {
+        border-top: 1px solid #636363;
+        border-radius: 20px;
+        padding: 40px;
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+
+        .logo_cont {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            p {
+                font-family: Cygre;
+                font-size: 24px;
+                font-weight: 400;
+                line-height: 28.8px;
+                text-align: left;
+                color: #A0A0A0;
+                max-width: 230px;
+            }
+        }
+
+        .adres_cont {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            max-width: 410px;
+
+            span,
+            p {
+                font-family: Cygre SemiBold;
+                font-size: 24px;
+                font-weight: 600;
+                line-height: 33.6px;
+                text-align: left;
+                color: #FFF;
+            }
+
+            span {
+                color: #A0A0A0;
+            }
+        }
+
+        .phone_cont {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+
+            a {
+                font-family: Cygre SemiBold;
+                font-size: 48px;
+                font-weight: 600;
+                line-height: 48px;
+                text-align: left;
+                color: #FFF;
+            }
+
+            p {
+                font-family: Cygre SemiBold;
+                font-size: 24px;
+                font-weight: 600;
+                line-height: 33.6px;
+                text-align: left;
+                color: #FFF;
+            }
+        }
+
+        .svg_ink_cont {
+            display: flex;
+            gap: 40px;
+
+            svg {
+                transform: scale(1);
+                transition: .5s;
+                min-width: 60px;
+                min-height: 60px;
+            }
+
+            svg:hover {
+                transition: .5s;
+                transform: scale(1.05);
+            }
+        }
+    }
+
+    .bottom_container {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        flex-wrap: wrap;
+        padding-bottom: 40px;
+
+        p,
+        a {
+            font-family: Cygre;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 22.4px;
+            text-align: left;
+            color: #A0A0A0;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+@media (max-width: 1550px) {
+    .footer_bottom_container .top_container .svg_ink_cont {
+        flex-direction: column;
+    }
+
+    .footer_bottom_container .top_container .phone_cont a {
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 1290px) {
+    .footer_bottom_container .top_container {
+        flex-wrap: wrap;
+    }
+
+    .footer_bottom_container .top_container .svg_ink_cont {
+        flex-direction: row;
+    }
+}
+
+@media (max-width: 970px) {
+    .footer_top_container {
+        flex-direction: column;
+        gap: 20px;
+
+        .left_container,
+        .right_container {
+            max-width: none;
+            min-height: 176px;
+        }
+    }
+}
+
+@media (max-width: 720px) {
+    .footer_bottom_container .top_container {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+@media (max-width: 470px) {
+    .footer_top_container .left_container span {
+        font-family: Cygre SemiBold;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 22.4px;
+        text-align: left;
+    }
+
+    .footer_top_container {
+        padding: 60px 0;
+    }
+
+    .footer_top_container .left_container {
+        background-size: 375px 117px;
+        background-position: 0% 100%;
+        padding: 20px;
+        border-radius: 20px;
+    }
+
+    .footer_top_container .right_container {
+        padding: 40px 20px;
+    }
+
+    .footer_top_container .right_container span {
+        font-family: Cygre SemiBold;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 19.6px;
+        text-align: left;
+    }
+
+    .footer_top_container .right_container form .input_cont input {
+        height: 60px;
+        font-family: Cygre;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 22.4px;
+        text-align: left;
+    }
+
+    .footer_top_container .right_container form button[type=submit] {
+        height: 60px;
+        font-family: Cygre SemiBold;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 22.4px;
+        text-align: center;
+    }
+
+    .footer_top_container .left_container p {
+        font-family: Cygre Medium;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 28.8px;
+        text-align: left;
+    }
+
+    .footer_top_container .right_container form p,
+    .footer_top_container .right_container form p a {
+        font-family: Cygre;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 16.8px;
+        text-align: left;
+    }
+
+    .footer_top_container .right_container form p {
+        color: #A0A0A0;
+    }
+
+    .footer_top_container .right_container form .input_cont.err span {
+        font-family: Cygre;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 19.6px;
+        text-align: left;
+    }
+
+    .footer_bottom_container .top_container .logo_cont {
+
+        svg {
+            width: 218px;
+            height: 28px;
+        }
+    }
+
+    .footer_bottom_container .top_container .logo_cont p {
+        font-family: Cygre;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 16.8px;
+        text-align: left;
+    }
+
+    .footer_bottom_container .top_container .adres_cont {
+        gap: 10px;
+    }
+
+    .footer_bottom_container .top_container .adres_cont p {
+        font-family: Cygre SemiBold;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 22.4px;
+        text-align: left;
+    }
+
+    .footer_bottom_container .top_container .adres_cont span {
+        font-family: Cygre SemiBold;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 19.6px;
+        text-align: left;
+    }
+
+    .footer_bottom_container .top_container .phone_cont a {
+        font-family: Cygre SemiBold;
+        font-size: 36px;
+        font-weight: 600;
+        line-height: 43.2px;
+        text-align: left;
+    }
+
+    .footer_bottom_container .top_container .phone_cont p {
+        font-family: Cygre SemiBold;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 22.4px;
+        text-align: left;
+    }
+
+    .footer_bottom_container .top_container .phone_cont {
+        gap: 20px;
+    }
+
+    .footer_bottom_container .top_container .svg_ink_cont {
+        gap: 20px;
+
+        svg {
+            width: 40px !important;
+            height: 40px !important;
+            max-width: 40px !important;
+            max-height: 40px !important;
+            min-width: 40px !important;
+            min-height: 40px !important;
+        }
+    }
+
+    .footer_bottom_container {
+        gap: 0;
+    }
+
+    .footer_bottom_container .bottom_container p,
+    .footer_bottom_container .bottom_container a {
+        font-family: Cygre;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 19.6px;
+        text-align: left;
+    }
+
+    .footer_bottom_container .bottom_container {
+        gap: 10px;
+    }
+}

@@ -1,0 +1,14 @@
+@font-face {
+	font-family: 'Onest-Medium';
+	src: url('onest-medium.eot');
+	/* IE 9 Compatibility Mode */
+	src:
+		url('onest-medium.woff2') format('woff2'),
+		/* Super Modern Browsers */
+		url('onest-medium.woff') format('woff'),
+		/* Firefox >= 3.6, any other modern browser */
+		url('onest-medium.ttf') format('truetype');
+	/* Safari, Android, iOS */
+	font-weight: 500;
+	font-style: normal;
+}

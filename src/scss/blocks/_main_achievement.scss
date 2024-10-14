@@ -1,0 +1,221 @@
+.main_achievement {
+    margin-top: 80px;
+    margin-bottom: 80px;
+    padding: 80px;
+    border-radius: 40px;
+    background-color: #E9ECF4;
+
+    h2 {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .flex {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .card {
+        width: 100%;
+        background-color: #FFF;
+        border-radius: 40px;
+        display: flex;
+
+        svg {
+            min-height: 150px;
+            max-height: 150px;
+            max-width: 150px;
+            min-width: 150px;
+            margin-right: 80px;
+            margin-top: 20px;
+        }
+
+        .top {
+            margin: 20px 0 40px 40px;
+            display: flex;
+            gap: 40px;
+            align-items: center;
+            margin-right: 20px;
+            min-width: 480px;
+            max-width: 480px;
+            height: fit-content;
+            min-height: 150px;
+
+            span {
+                font-family: Cygre Medium;
+                font-size: 48px;
+                font-weight: 500;
+                line-height: 48px;
+                text-align: left;
+                color: #E22B57;
+                white-space: nowrap;
+            }
+
+            h3 {
+                font-family: Cygre Medium;
+                font-size: 48px;
+                font-weight: 500;
+                line-height: 48px;
+                text-align: left;
+            }
+        }
+
+        .default {
+            display: none;
+            background-color: #E9ECF3;
+            border-radius: 20px;
+            padding: 20px;
+
+            ul {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                list-style-type: circle;
+
+                li {
+                    list-style-type: disc;
+                    margin-left: 20px;
+                }
+            }
+        }
+
+        .cont {
+            padding: 40px;
+
+            .text {
+                font-family: Cygre Medium;
+                font-size: 24px;
+                font-weight: 500;
+                line-height: 31.2px;
+                text-align: left;
+                margin-bottom: 20px;
+            }
+
+            .span_btn {
+                font-family: Cygre;
+                font-size: 18px;
+                font-weight: 700;
+                line-height: 23.4px;
+                text-align: left;
+                text-transform: uppercase;
+                border-bottom: 1px dashed #2164E5;
+                cursor: pointer;
+                display: inline-block;
+            }
+
+            .span_btn:hover {
+                opacity: .5;
+            }
+        }
+    }
+
+    .card.active {
+
+        .cont {
+            .span_btn {
+                margin-bottom: 10px;
+            }
+        }
+
+        .default {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+    }
+
+
+}
+
+@media (max-width: 1550px) {
+    .main_achievement .card {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    .main_achievement .card svg {
+        margin: 0;
+        margin-top: 20px;
+        margin-right: 40px;
+        margin-left: 40px;
+    }
+
+    .main_achievement .card .top {
+        max-width: none;
+        min-width: auto;
+        min-height: auto;
+        margin-bottom: 0;
+    }
+
+    .main_achievement .card .cont {
+        padding-top: 0;
+    }
+}
+
+@media (max-width: 720px) {
+    .main_achievement {
+        padding: 40px 20px;
+    }
+
+    .main_achievement .card .top {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .main_achievement .card svg {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .main_achievement .card .cont {
+        padding: 20px;
+        padding-top: 0;
+    }
+
+    .main_achievement .card .top span {
+        font-family: Cygre Medium;
+        font-size: 30px;
+        font-weight: 500;
+        line-height: 30px;
+        text-align: left;
+    }
+
+    .main_achievement .card .top h3 {
+        font-family: Cygre Medium;
+        font-size: 30px;
+        font-weight: 500;
+        line-height: 30px;
+        text-align: left;
+    }
+
+    .main_achievement .card svg {
+        min-height: 100px;
+        max-height: 100px;
+        max-width: 100px;
+        min-width: 100px;
+    }
+
+    .main_achievement .card .cont .text {
+        font-family: Cygre Medium;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 23.4px;
+        text-align: left;
+    }
+
+    .main_achievement .card .cont .span_btn {
+        font-family: Cygre;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 18.2px;
+        text-align: left;
+    }
+}
+
+@media (max-width: 470px) {
+    .main_achievement {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+}

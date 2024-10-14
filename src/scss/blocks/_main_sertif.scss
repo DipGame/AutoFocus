@@ -1,0 +1,79 @@
+.main_sertif {
+    margin-top: 160px;
+    margin-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    border-radius: 40px;
+    padding: 40px 40px 60px;
+    background-color: #E9ECF3;
+
+    .top {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        gap: 20px;
+        align-items: center;
+
+        h2 {
+            font-family: Cygre SemiBold;
+            font-size: 48px;
+            font-weight: 600;
+            line-height: 67.2px;
+            text-align: center;
+        }
+    }
+}
+
+.sertifSwiper {
+    width: -webkit-fill-available;
+    .swiper-slide {
+        width: fit-content;
+        max-width: 425px;
+        display: flex;
+        align-items: center;
+
+        img {
+            object-fit: contain;
+            width: fit-content;
+            max-height: 425px;
+        }
+    }
+}
+
+@media (max-width: 720px) {
+    .main_sertif {
+        margin-top: 40px;
+        margin-bottom: 40px;
+        padding: 40px 0;
+        gap: 30px;
+
+        .top {
+            padding: 0 20px;
+            svg {
+                width: 30px;
+                height: 30px;
+            }
+        }
+    }
+
+    .main_sertif .top h2 {
+        font-family: Cygre SemiBold;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 21.6px;
+        text-align: center;
+    }
+
+    .sertifSwiper {
+        padding-left: 20px;
+    }
+
+    .sertifSwiper .swiper-slide {
+        max-width: 150px;
+
+        img {
+            max-height: 150px;
+        }
+    }
+}

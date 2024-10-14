@@ -1,0 +1,290 @@
+* {
+	box-sizing: border-box !important;
+	background-repeat: no-repeat !important;
+	word-break: break-word !important;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	overflow-x: hidden;
+	// overflow-y: scroll;
+	font-family: Montserrat;
+	// position: relative;
+}
+
+.no-scroll {
+	overflow-y: hidden;
+}
+
+div,
+li,
+p,
+a,
+span,
+section,
+button {
+	font-family: Cygre;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 25.2px;
+	text-align: left;
+	color: #000;
+}
+
+h1,
+h2 {
+	font-family: Cygre Medium;
+	font-size: 80px;
+	font-weight: 500;
+	line-height: 72px;
+	letter-spacing: -0.03em;
+	text-align: left;
+	color: #000;
+	word-wrap: break-word;
+}
+
+h1 span,
+h2 span {
+	font-family: Cygre Medium;
+	font-size: 80px;
+	font-weight: 500;
+	line-height: 72px;
+	letter-spacing: -0.03em;
+	text-align: left;
+}
+
+span.blue {
+	color: #2164E5;
+}
+
+span.red {
+	color: #E22B57;
+}
+
+@media (max-width: 350px) {
+	h1.title {
+		padding: 0 15px;
+	}
+}
+
+h3,
+h4,
+h5,
+h6 {
+	font-family: Cygre SemiBold;
+	font-size: 30px;
+	font-weight: 600;
+	line-height: 36px;
+	text-align: left;
+	color: #000;
+}
+
+@media (max-width: 720px) {
+
+	h1,
+	h1 span {
+		font-family: Cygre Medium;
+		font-size: 45px;
+		font-weight: 500;
+		line-height: 40.5px;
+		letter-spacing: -0.03em;
+		text-align: left;
+	}
+
+	h2,
+	h2 span {
+		font-family: Cygre Medium;
+		font-size: 36px;
+		font-weight: 500;
+		line-height: 36px;
+		letter-spacing: -0.03em;
+		text-align: left;
+	}
+
+	h3,
+	h4,
+	h5,
+	h6 {
+		font-family: Cygre SemiBold;
+		font-size: 24px;
+		font-weight: 600;
+		line-height: 28.8px;
+		text-align: left;
+	}
+}
+
+@media (max-width: 470px) {
+
+
+
+	div,
+	li,
+	p,
+	a,
+	span,
+	section,
+	button {
+		font-family: Cygre;
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 19.6px;
+		text-align: left;
+	}
+
+
+}
+
+a {
+	text-decoration: none;
+	transition: .5s;
+	cursor: pointer;
+}
+
+a:hover {
+	color: #2164E5;
+}
+
+main {
+	padding: 0;
+	margin: 0;
+	position: relative;
+}
+
+.padding {
+	padding: 0 20px;
+}
+
+@media (max-width: 350px) {
+	.padding {
+		padding: 0 15px;
+	}
+}
+
+.flex {
+	display: flex;
+}
+
+.flex-direct {
+	flex-direction: column;
+}
+
+.smooth {
+	transition: .5s;
+}
+
+.smooth:hover {
+	transition: .5s;
+}
+
+.def_div {
+	width: 100%;
+	max-width: 1760px;
+	margin: 0 auto;
+}
+
+.button {
+	font-family: Cygre SemiBold;
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 33px;
+	text-align: left;
+	border-radius: 12px;
+	color: #FFF;
+	padding: 5px;
+	background-color: #2164E5;
+	transition: .5s;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.button:hover {
+	background-color: #134AB5;
+	transition: .5s;
+	color: #FFF;
+}
+
+.button_v2 {
+	font-family: Cygre SemiBold;
+	font-size: 24px;
+	font-weight: 600;
+	line-height: 33.6px;
+	text-align: left;
+	border-radius: 12px;
+	color: #FFF;
+	padding: 5px;
+	background-color: #E22B57;
+	transition: .5s;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.button_v2:hover {
+	background-color: #C81842;
+	transition: .5s;
+	color: #FFF;
+}
+
+.button_v3 {
+	font-family: Cygre SemiBold;
+	font-size: 24px;
+	font-weight: 600;
+	line-height: 33.6px;
+	text-align: left;
+	border-radius: 12px;
+	color: #2164E5;
+	padding: 5px;
+	background-color: #FFF;
+	border: 1px solid #2164E5;
+	transition: .5s;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.button_v3:hover {
+	transition: .5s;
+	color: #FFF;
+	background-color: #2164E5;
+}
+
+@media (max-width: 470px) {
+
+	.button,
+	.button_v2,
+	.button_v3 {
+		font-family: Cygre SemiBold;
+		font-size: 12px;
+		font-weight: 600;
+		line-height: 19.8px;
+		text-align: left;
+	}
+}
+
+.button:disabled {
+	opacity: .6;
+	cursor: default;
+}
+
+.button:disabled:hover {
+	opacity: .6;
+	cursor: default;
+}
+
+.invise {
+	display: none !important;
+	height: 0 !important;
+	width: 0 !important;
+}
+
+.fancybox-button *,
+.fancybox-infobar * {
+	color: #FFF !important;
+}

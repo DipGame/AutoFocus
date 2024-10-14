@@ -1,0 +1,129 @@
+.main_problem {
+    border-radius: 40px;
+    padding: 80px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    background-color: #E9ECF3;
+    display: flex;
+    gap: 40px;
+    justify-content: space-between;
+
+    h2 {
+        max-width: 628px;
+    }
+
+    .subtitle {
+        display: none;
+    }
+
+    .grid {
+        width: 100%;
+        max-width: 932px;
+        grid-template-columns: repeat(2, 1fr);
+        display: grid;
+        gap: 40px;
+
+        .card {
+            background-color: #FFF;
+            border-radius: 20px;
+            padding: 40px 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            position: relative;
+
+            .hiid_text_cont {
+                opacity: 0;
+                visibility: hidden;
+                transition: .5s;
+                top: 100%;
+                left: 0;
+                position: absolute;
+                width: 100%;
+                background-color: #FFF;
+                border-radius: 20px;
+                padding: 20px;
+                z-index: 2;
+                -webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+                -moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+                box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+            }
+        }
+
+        .card:hover {
+            .hiid_text_cont {
+                transition: .5s;
+                opacity: 1;
+                visibility: visible;
+                top: 80%;
+            }
+        }
+    }
+}
+
+@media (max-width: 1550px) {
+    .main_problem {
+        flex-direction: column;
+
+        h2 {
+            max-width: none;
+        }
+
+        .grid {
+            max-width: none;
+        }
+    }
+}
+
+@media (max-width: 970px) {
+    .main_problem {
+        padding: 40px 20px;
+    }
+}
+
+@media (max-width: 720px) {
+    .main_problem .grid {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        .card {
+            padding: 20px;
+            gap: 40px;
+
+            svg {
+                width: 60px;
+                height: 60px;
+            }
+
+            h3 {
+                font-family: Cygre Medium;
+                font-size: 20px;
+                font-weight: 500;
+                line-height: 24px;
+                text-align: left;
+            }
+        }
+    }
+
+    .main_problem {
+        gap: 20px;
+
+        .subtitle {
+            display: block;
+            font-family: Cygre;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 14px;
+            text-align: left;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+@media (max-width: 470px) {
+    .main_problem {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+}

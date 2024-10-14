@@ -1,0 +1,181 @@
+.main_rew {
+    margin-top: 80px;
+    margin-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 40px;
+
+        .card {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            max-width: 560px;
+            padding: 40px;
+            border-radius: 20px;
+            overflow: hidden;
+            background-color: #E9ECF3;
+
+            .num {
+                font-family: Cygre Medium;
+                font-size: 80px;
+                font-weight: 500;
+                line-height: 72px;
+                text-align: left;
+            }
+
+            .text {
+                font-family: Cygre SemiBold;
+                font-size: 24px;
+                font-weight: 600;
+                line-height: 28.8px;
+                text-align: left;
+                margin-top: auto;
+            }
+
+            h3 {
+                font-family: Cygre SemiBold;
+                font-size: 24px;
+                font-weight: 600;
+                line-height: 28.8px;
+                text-align: left;
+            }
+
+            p {
+                font-family: Cygre;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 22.4px;
+                text-align: left;
+            }
+
+            .bottom {
+                margin-top: auto;
+                padding-top: 20px;
+                display: flex;
+                justify-content: space-between;
+                gap: 20px;
+
+                flex-wrap: wrap;
+
+                h4 {
+                    font-family: Cygre Medium;
+                    font-size: 18px;
+                    font-weight: 500;
+                    line-height: 21.6px;
+                    text-align: left;
+                }
+
+                .rew_link {
+                    border-bottom: 1px dashed #2164E5;
+                    font-family: Cygre;
+                    font-size: 16px;
+                    font-weight: 700;
+                    line-height: 20.8px;
+                    text-align: left;
+                    text-transform: uppercase;
+                    color: #2164E5;
+                }
+
+                .rew_link:hover {
+                    opacity: .5;
+                }
+            }
+
+            video {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: center;
+            }
+        }
+
+        .card.blue {
+            background-color: #2164E5;
+
+            * {
+                color: #FFF;
+            }
+        }
+
+        .card.video {
+            background: none;
+            padding: 0;
+        }
+    }
+}
+
+@media (max-width: 1290px) {
+    .main_rew .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 970px) {
+    .main_rew .grid {
+        display: flex;
+        flex-direction: column;
+
+        .card {
+            max-width: none;
+            min-height: 282px;
+        }
+    }
+}
+
+@media (max-width: 720px) {
+
+    .main_rew {
+        gap: 30px;
+    }
+
+    .main_rew .grid {
+
+        .card {
+            padding: 40px 20px;
+
+            .num {
+                font-family: Cygre Medium;
+                font-size: 60px;
+                font-weight: 500;
+                line-height: 54px;
+                text-align: left;
+            }
+
+            .text {
+                font-family: Cygre SemiBold;
+                font-size: 18px;
+                font-weight: 600;
+                line-height: 21.6px;
+                text-align: left;
+            }
+
+            h3 {
+                font-family: Cygre SemiBold;
+                font-size: 16px;
+                font-weight: 600;
+                line-height: 22.4px;
+                text-align: left;
+            }
+
+            p {
+                font-family: Cygre;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 22.4px;
+                text-align: left;
+            }
+        }
+    }
+}
+
+@media (max-width: 470px) {
+    .main_rew {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+}
