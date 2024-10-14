@@ -109,5 +109,32 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
+    if (document.querySelector('.btn_detail')) {
+        const btnDetail = document.querySelectorAll('.btn_detail');
+
+        btnDetail.forEach(element => {
+            let card = element.closest(".card");
+            let popupCard = card.querySelector('.popup_keys');
+            let popupCloseBtn = popupCard.querySelector('.close');
+
+            element.addEventListener('click', () => { 
+                if (popupCard) {
+                    if (document.getElementById('overlayPopup')) {
+                        addClass(document.getElementById('overlayPopup'), 'open');
+                    }
+                    addClass(popupCard, 'open');
+                }
+             })
+
+             if (popupCloseBtn) {
+                popupCloseBtn.addEventListener('click', () => { 
+                    document.querySelectorAll('.open').forEach(element => {
+                        removeClass(element, 'open');
+                    });
+                 })
+             }
+        });
+    }
+
     console.log('index.js finish work');
 });
