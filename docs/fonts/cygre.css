@@ -1,8 +1,8 @@
 @font-face {
 	font-family: 'Cygre Bold';
 	src: 
-		url('Tilda-Sans_Semibold.woff2') format('woff2'),
-		url('Tilda-Sans_Semibold.woff') format('woff');
+		url('tilda-sans_semibold.woff2') format('woff2'),
+		url('tilda-sans_semibold.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -10,8 +10,8 @@
 @font-face {
 	font-family: 'Cygre Medium';
 	src: 
-		url('Tilda-Sans_Medium.woff2') format('woff2'),
-		url('Tilda-Sans_Medium.woff') format('woff');
+		url('tilda-sans_medium.woff2') format('woff2'),
+		url('tilda-sans_medium.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -19,8 +19,8 @@
 @font-face {
 	font-family: 'Cygre SemiBold';
 	src: 
-		url('Tilda-Sans_Semibold.woff2') format('woff2'),
-		url('Tilda-Sans_Semibold.woff') format('woff');
+		url('tilda-sans_semibold.woff2') format('woff2'),
+		url('tilda-sans_semibold.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -28,8 +28,8 @@
 @font-face {
 	font-family: 'Cygre';
 	src: 
-		url('Tilda-Sans_Regular.woff2') format('woff2'),
-		url('Tilda-Sans_Regular.woff') format('woff');
+		url('tilda-sans_regular.woff2') format('woff2'),
+		url('tilda-sans_regular.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
 }
